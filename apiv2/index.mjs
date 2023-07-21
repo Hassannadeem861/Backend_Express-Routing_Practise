@@ -23,9 +23,9 @@ router.use((req, res, next) => {
 
 })
 
-router.use("/api/v1", commentRouter)
-router.use("/api/v1", postRouter)
-router.use("/api/v1", feedRouter)
+router.use("/api/v2", commentRouter)
+router.use("/api/v2", postRouter)
+router.use("/api/v2", feedRouter)
 
 
 router.post('/weather/:cityName', (req, res, next) => {
